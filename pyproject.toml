@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "tischlre_diffusion2d"
+version = "0.0.1"
+description = "An example implementation for solving diffusion equation in 2D"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+keywords = ["sse", "simulation", "diffusion"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "matplotlib",
+]
+
+[project.urls]
+Homepage = "https://github.com/Simulation-Software-Engineering/diffusion2D"
+Repository = "https://github.com/Simulation-Software-Engineering/diffusion2D"
+
+[project.entry-points."simulation"]
+solve = "tischlre_diffusion2d:solve"
